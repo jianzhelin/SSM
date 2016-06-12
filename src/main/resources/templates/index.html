@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh_CN"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>控制台</title>
+</head>
+<body>
+<form action="login">
+    用户<input type="text" name="username"/><br/>
+    密码<input type="password" name="password"/><br/>
+    <input type="submit" value="提交"/>
+</form>
+<div th:text="${time}">
+</div>
+<th:block th:text="${message}"></th:block>
+</body>
+</html>
